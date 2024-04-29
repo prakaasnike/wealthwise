@@ -5,17 +5,17 @@ import React from 'react';
 const Logo = () => {
     return (
         <Link href="/">
-
             <div style={{ display: 'flex', alignItems: 'center' }}>
-                <Image
-                    src="/wealthwise.svg"
-                    alt="Logo"
-                    width={52}
-                    height={11}
-                />
-                <p className='text-2xl p-2 font-bold leading-tight tracking-tighter text-white'>WealthWise</p>
+                <div style={{ width: 64, height: 20, position: 'relative' }}>
+                    <Image
+                        src="/wealthwise.svg"
+                        alt="Logo"
+                        layout="fill"
+                        objectFit="contain"
+                    />
+                </div>
+                <p className='text-xl font-bold leading-tight tracking-tighter text-white'>WealthWise</p>
             </div>
-
         </Link>
     )
 }
