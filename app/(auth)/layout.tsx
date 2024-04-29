@@ -1,11 +1,17 @@
-import React, { ReactNode } from 'react'
+import Logo from '@/components/Logo';
+import React from 'react';
 
-function layout({ children }: { children: ReactNode }) {
-    return (
-        <div className='relative flex h-screen w-full flex-col items-center justify-center'>
-            <div className="mt-12">{children}</div>   
-        </div>
-    )
+interface Props {
+    children: React.ReactNode;
 }
 
-export default layout
+function Layout({ children }: Props) {
+    return (
+        <div className='relative flex h-screen w-full flex-col items-center justify-center'>
+            <Logo />
+            <div className="mt-12">{children}</div>
+        </div>
+    );
+}
+
+export default Layout;
