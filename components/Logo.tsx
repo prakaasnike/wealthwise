@@ -6,15 +6,15 @@ const Logo = () => {
     return (
         <Link href="/">
             <div style={{ display: 'flex', alignItems: 'center' }}>
-                <div style={{ width: 64, height: 20, position: 'relative' }}>
+                <div className='relative w-10 h-8'>
                     <Image
                         src="/wealthwise.svg"
-                        alt="Logo"
-                        layout="fill"
-                        objectFit="contain"
+                        alt="wealthwise logo"
+                        fill
+                        object-fit="cover"
                     />
                 </div>
-                <p className='text-xl font-bold leading-tight tracking-tighter text-white'>WealthWise</p>
+                <p className='text-xl p-2 font-bold leading-tight tracking-tighter text-white'>WealthWise</p>
             </div>
         </Link>
     )
